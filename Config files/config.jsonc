@@ -1,92 +1,72 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "\"$(fastfetch.sh logo)\"",
+    "source": "windows 11",
     "height": 18
-  },
-  "display": {
-    "separator": " : "
   },
   "modules": [
     {
-      "type": "command",
-      "key": "  ",
-      "keyColor": "blue",
-      "text": "splash=$(hyprctl splash);echo $splash"
-    },
-    {
       "type": "custom",
-      "format": "┌──────────────────────────────────────────┐"
-    },
-    {
-      "type": "chassis",
-      "key": "  󰇺 Chassis",
-      "format": "{1} {2} {3}"
+      "format": "┌────────────────────────────────────────────┐"
     },
     {
       "type": "os",
-      "key": "  󰣇 OS",
+      "key": "  󰍳 OS ",
       "format": "{2}",
       "keyColor": "red"
     },
     {
       "type": "kernel",
-      "key": "   Kernel",
+      "key": "   Kernel ",
       "format": "{2}",
       "keyColor": "red"
     },
     {
       "type": "packages",
-      "key": "  󰏗 Packages",
+      "key": "  󰏗 Packages ",
       "keyColor": "green"
     },
     {
       "type": "display",
-      "key": "  󰍹 Display",
+      "key": "  󰍹 Display ",
       "format": "{1}x{2} @ {3}Hz [{7}]",
       "keyColor": "green"
     },
     {
       "type": "terminal",
-      "key": "   Terminal",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "wm",
-      "key": "  󱗃 WM",
-      "format": "{2}",
+      "key": "   Terminal ",
       "keyColor": "yellow"
     },
     {
       "type": "custom",
-      "format": "└──────────────────────────────────────────┘"
+      "format": "└────────────────────────────────────────────┘"
     },
     "break",
     {
       "type": "title",
-      "key": "  ",
-      "format": "{6} {7} {8}"
+      "key": "   ",
+      "format": "{6}"
     },
     {
       "type": "custom",
-      "format": "┌──────────────────────────────────────────┐"
+      "format": "┌────────────────────────────────────────────┐"
     },
     {
       "type": "cpu",
-      "format": "{1} @ {7}",
-      "key": "   CPU",
+      "format": "{3} @ {7}",
+      "key": "   CPU ",
       "keyColor": "blue"
     },
     {
       "type": "gpu",
       "format": "{1} {2}",
-      "key": "  󰊴 GPU",
+      "key": "  󰊴 GPU ",
       "keyColor": "blue"
     },
     {
       "type": "gpu",
       "format": "{3}",
-      "key": "   GPU Driver",
+      "key": "   GPU Driver ",
       "keyColor": "magenta"
     },
     {
@@ -97,7 +77,7 @@
     {
       "type": "disk",
       "key": "  󱦟 OS Age ",
-      "folders": "/",
+      "folders": "C:\\",
       "keyColor": "red",
       "format": "{days} days"
     },
@@ -108,7 +88,7 @@
     },
     {
       "type": "custom",
-      "format": "└──────────────────────────────────────────┘"
+      "format": "└────────────────────────────────────────────┘"
     },
     {
       "type": "colors",
