@@ -12,12 +12,12 @@
             "keys": "ctrl+c"
         },
         {
-            "id": "Terminal.PasteFromClipboard",
-            "keys": "ctrl+v"
-        },
-        {
             "id": "Terminal.FindText",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
         },
         {
             "id": "Terminal.DuplicatePaneAuto",
@@ -47,7 +47,7 @@
         "list": 
         [
             {
-                "commandline": "powershell.exe -NoExit -Command fastfetch",
+                "commandline": "powershell.exe -NoExit -Command \"fastfetch; nu\"",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
@@ -75,6 +75,12 @@
                 "guid": "{c1debbf1-ffbb-44ad-98a5-ef9faad5c14a}",
                 "hidden": false,
                 "name": "Catppuccin PowerShell"
+            },
+            {
+                "guid": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
+                "hidden": false,
+                "name": "Nushell",
+                "source": "nu"
             }
         ]
     },
