@@ -1,3 +1,6 @@
+create database practl;
+use practl;
+
 CREATE TABLE Item (
     ICode VARCHAR(5),
     IName VARCHAR(30),
@@ -23,3 +26,39 @@ INSERT INTO Vendor VALUES
 ('P02', 'Mukesh'),
 ('P03', 'Rohan'),
 ('P04', 'Kapil');
+
+## 1
+select ICode, IName, VName
+from Item, Vendor
+where Item.VCode = Vendor.VCode and IName = "Refrigerator";
+
+## 2
+select IName, ICode, VName, Price
+from Item, Vendor
+where Item.VCode = Vendor.Vcode and Price > 23000;
+
+## 3
+select IName from Item
+where IName like "%r";
+
+## 4
+select * from Item
+order by VCode;
+
+## 5
+select VName, IName
+from Item, Vendor
+where Item.VCode = Vendor.VCode and Vendor.VCode = "P04";
+
+## 6
+select Color, count(Color)
+from Item
+group by Color;
+
+## 7
+select * from Item
+where Price < 30000;
+
+## 8
+select * from Item
+order by Price;
