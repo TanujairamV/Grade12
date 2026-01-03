@@ -3,7 +3,7 @@ def display():
     d = f.readlines()
     
     for i in d:
-        s = i.strip()
+        s = i.split()
         for j in s:
             print(j+"#")
         print()
