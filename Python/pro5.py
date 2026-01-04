@@ -14,16 +14,18 @@ def create():
 def search():
     f = open("students.dat", "rb")
     search = int(input("Enter Roll Number to search: "))
+    found = False
     try:
         while True:
             L = pickle.load(f)
             if L[0] == search:
                 print("Student Details:",L)
+                found = True
                 break
-        else:
-            print("Student not found.")
     except:
         f.close()
+        if found == False:
+            print("Record not found")
 
 create()
 search()
