@@ -45,7 +45,7 @@ select ANO, AMOUNT from TRANSACT
 where DOT like "%-05-%";
 
 ## 4
-select ANO, ANAME from ACCOUNT
+select ANAME from ACCOUNT
 where ADDRESS in ("Chennai","Banglore");
 
 ## 5
